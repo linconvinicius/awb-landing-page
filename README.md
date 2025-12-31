@@ -329,7 +329,7 @@ Este projeto é propriedade da **AWB Digital**. Todos os direitos reservados.
 
 <div align="center">
 
-**Desenvolvido com 💙 por [AWB Digital](https://awbdigital.com)**
+**Desenvolvido com 💙 por [AWB Digital](https://awb-landing-page.vercel.app/)**
 
 *Elevando o padrão de desenvolvimento de software no Brasil*
 
