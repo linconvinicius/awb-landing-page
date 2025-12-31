@@ -1,10 +1,17 @@
 
 import nodemailer from 'nodemailer';
 
-export default async function handler(req, res, emailConfig) {
+export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ message: 'Method not allowed' });
   }
+
+  // Read environment variables directly (for Vercel)
+  const emailConfig = {
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS,
+    to: process.env.GMAIL_TO
+  };
 
   console.log('📧 [HANDLER] Received email config:', {
     user: emailConfig?.user,
